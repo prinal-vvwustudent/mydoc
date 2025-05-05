@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seminar Announcement</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 30px;
+      color: indigo;
+	  font-family:arial;
+      text-align: center;
+      margin-bottom: 15px;
+      animation: slideIn 1s ease forwards;
+	  text-shadow:2px 2px 2px cyan;
+    }
+
+    h2 {
+      font-size: 23px;
+      text-align: center;
+      color:red;
+	  text-shadow:2px 2px 2px pink;
+      margin-bottom: 25px;
+      animation: slideIn 1.2s ease forwards;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+	 }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: darkgreen;
+      position: relative;
+      padding-left: 20px;
+	  text-shadow:1px 2px 2px darkseagreen;
+    }
+
+    li::before {
+      content: '🎯';
+      position: absolute;
+      left: 0;
+    }
+
+    .info {
+      font-size: 14px;
+      text-align: center;
+      color: #666;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 35px 30px;
+      }
+
+      h1 {
+        font-size: 24px;
+	
+      }
+
+      li {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🎓 Seminar Announcement</h1>
+    <h2>Organized by Your Institute Name</h2>
+    <ul>
+      <li>Artificial Intelligence & Future</li>
+      <li>Entrepreneurship & Startups</li>
+      <li>Mental Health Awareness</li>
+      <li>Climate Change & Sustainability</li>
+      <li>Cyber Security Essentials</li>
+    </ul>
+    <div class="info">
+      📅 <strong>Date:~</strong> 28 April 2025 <br>
+      🕒 <strong>Time:~</strong> 11:00 AM - 1:00 PM <br>
+      📍 <strong>Venue:~</strong> Main Seminar Hall <br>
+      ☎️ <strong>Contact:~</strong> Prof. Sharma - 9876543210
+    </div>
+  </div>
+</body>
+</html>
